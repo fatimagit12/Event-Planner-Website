@@ -1,0 +1,73 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .navLinks .links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 2px;
+  }
+  
+  .navLinks .links button {
+    background-color:chocolate;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size:18px;
+    padding: 8px 9px; /* Added padding */
+  }
+  
+  .navLinks .links button:hover {
+    color: #ddd;
+  }
+  
+  .btn-info, .btn-success {
+    background-color: #28a745; /* Changed to green for both buttons */
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navLinks {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+    }
+  
+    .navLinks.showmenu {
+      display: flex;
+    }
+  }
+  
